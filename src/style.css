@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+header, footer, section {
+    padding: 0px 100px;
+}
 body {
     min-height: 100vh;
     margin: auto;
@@ -7,16 +9,20 @@ body {
     flex-direction: column;
     font-family: Roboto, sans-serif;
 }
+/* Here starts the header styling */
+
 header {
+    height: 72px;
+    line-height: 72px;
     background-color: #1f2937;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    
 }
 .hlogo {
     color: #f9faf8;
     font-size: 24px;
+    font-weight: bolder;
 }
 
 header ul {
@@ -31,23 +37,94 @@ header ul li a {
     text-decoration: none;
 }
 
+/* Here starts the first section styling */
+
 .section.first {
     background-color: #1f2937;
     display: flex;
-    justify-content: center;
+    padding: 25px 100px;
+    justify-content: space-between;
 }
-/* 
-.herocont {
+.first .container1,.first .container2  {
+    flex:1;
     display: flex;
-} */
-
-.first .title {
+    flex-direction: column;
+}
+.first .container1 .title {
     font-size: 48px;
     font-weight: bolder;
     color:#f9faf8;
 }
 
-.sectext {
+.first .subtext {
     font-size: 18px;
     color: #e5e7eb;
+}
+.first .button {
+    background-color: #3882f6;
+    padding: 15px;
+    border-radius: 15px;
+    width: fit-content;
+    text-decoration: none;
+    color: #f9faf8;
+    font-size: 20px;
+}
+
+.first .container2 {
+    border: 1px dotted #f9faf8;
+}
+
+/* Here starts the second section styling */
+
+.section.second {
+    padding: 25px 100px;
+    text-align: center;
+    /
+    
+}
+.second .title {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    padding: 30px;
+}
+.imgbox {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    flex-wrap: wrap;
+}
+.second div img {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #3882f6;
+    border-radius: 15px;
+}
+
+/* Here starts the third section styling */
+
+.section.third {
+    text-align: center;
+    padding: 25px 100px;
+    background-color: #e5e7eb;
+
+}
+
+/* Here starts the third section styling */
+
+.section.fourth {
+    text-align: center;
+    padding: 25px 100px;
+
+}
+
+/* Here starts the third section styling */
+
+footer {
+    background-color: #1f2937;
+    color: #f9faf8;
+    text-align: center;
+    height: 72px;
+    line-height: 72px;
 }
