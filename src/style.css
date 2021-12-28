@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-header, footer, section {
-    padding: 0px 100px;
-}
+
 body {
     min-height: 100vh;
     margin: auto;
@@ -15,23 +13,30 @@ header {
     height: 72px;
     line-height: 72px;
     background-color: #1f2937;
+    justify-content: center;
+    
+}
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 80vw;
+    margin: auto;
 }
+
 .hlogo {
     color: #f9faf8;
     font-size: 24px;
     font-weight: bolder;
 }
 
-header ul {
+.header ul {
     display: flex;
     list-style-type: none;
     gap: 15px;
 }
 
-header ul li a {
+.header ul li a {
     font-size: 18px;
     color: #e5e7eb;
     text-decoration: none;
@@ -39,10 +44,13 @@ header ul li a {
 
 /* Here starts the first section styling */
 
-.section.first {
+.sec1 {
     background-color: #1f2937;
+}
+.section.first {
+    max-width: 80vw;
+    margin: 30px auto;
     display: flex;
-    padding: 25px 100px;
     justify-content: space-between;
 }
 .first .container1,.first .container2  {
@@ -76,10 +84,16 @@ header ul li a {
 
 /* Here starts the second section styling */
 
+.sec2 {
+
+}
 .section.second {
-    padding: 25px 100px;
+    max-width: 80vw;
+    margin: 30px auto;
     text-align: center;
-    /
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     
 }
 .second .title {
@@ -96,18 +110,19 @@ header ul li a {
 }
 .second div img {
     display: inline-block;
-    height: 100px;
-    width: 100px;
+    height: 125px;
+    width: 125px;
     border: 1px solid #3882f6;
     border-radius: 15px;
 }
 
 /* Here starts the third section styling */
 
+.sec3 {background-color: #e5e7eb;
+}
 .section.third {
-    padding: 25px 100px;
-    background-color: #e5e7eb;
-    
+    max-width: 80vw;
+    margin: 30px auto;    
 }
 .quote-container {
     display: flex;
@@ -134,10 +149,44 @@ header ul li a {
 
 /* Here starts the fourth section styling */
 
-.section.fourth {
-    text-align: center;
-    padding: 25px 100px;
+.sec4 {
+    
+}
 
+.section.fourth {
+    max-width: 80vw;
+    margin: 30px auto; 
+    text-align: center;
+}
+
+.actioncont {
+    background-color: #3882f6;
+    border-radius: 15px;
+    display: flex ;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px;
+}
+.actioncont * {
+    color: #f9faf8;
+    text-decoration: none;
+    text-align: left;
+}
+.paction {
+    font-weight: bold;
+    font-size: 30px;
+}
+.paction2 {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.baction {
+    font-size: 30px;
+    font-weight: 900;
+    border: 2px solid #f9faf8;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 /* Here starts the footer styling */
