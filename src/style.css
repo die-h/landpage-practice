@@ -52,6 +52,7 @@ header {
     margin: 30px auto;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 .first .container1,.first .container2  {
     flex:1;
