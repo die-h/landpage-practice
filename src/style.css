@@ -105,13 +105,34 @@ header ul li a {
 /* Here starts the third section styling */
 
 .section.third {
-    text-align: center;
     padding: 25px 100px;
     background-color: #e5e7eb;
-
+    
+}
+.quote-container {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    max-width: 500px ;
+    gap: 15px;
+    justify-content: center;
 }
 
-/* Here starts the third section styling */
+.custom-quote {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1f2937;
+    text-align: right;
+}
+.custom-sign {
+    color: #1f2937;
+    font-weight: bold;
+    text-align: right;
+    padding: 0px 30px;
+}
+
+/* Here starts the fourth section styling */
 
 .section.fourth {
     text-align: center;
@@ -119,7 +140,7 @@ header ul li a {
 
 }
 
-/* Here starts the third section styling */
+/* Here starts the footer styling */
 
 footer {
     background-color: #1f2937;
